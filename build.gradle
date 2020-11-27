@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.10"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    cameraX = '1.0.0-beta12'
+    cameraXViewClass = '1.0.0-alpha19'
+    mlKitFaceRecog = '16.0.2'
+    archLifecycleVersion = '2.2.0'
+    androidxArchVersion = '2.1.0'
+    tfLiteVersion = '0.1.0-rc1'
+    tfLiteGpuVersion = '2.3.0'
+    dagger2Version = '2.28.3'
+    dagger2ImplVersion = '2.29.1'
+}

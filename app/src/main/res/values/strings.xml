@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Face Mask Detection</string>
+    <string name="camera_rotation">Camera Rotation</string>
+</resources>
